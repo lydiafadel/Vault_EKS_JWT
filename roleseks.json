@@ -1,0 +1,10 @@
+  {
+   "role_type": "jwt",
+   "user_claim": "iss",
+   "bound_audiences": "https://kubernetes.default.svc",
+   "bound_claims": {
+    "/kubernetes.io/serviceaccount/name": ["payment","fadel", "saandrea"] 
+    },
+   "policies": "default",
+   "ttl": "3h"
+  } 
