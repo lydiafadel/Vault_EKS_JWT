@@ -1,0 +1,15 @@
+vault auth enable jwt
+
+//Define the jwt config 
+vault write auth/jwt/config \
+    oidc_discovery_url="https://oidc.eks.us-east-2.amazonaws.com/id/70E6A5C14C513E0BABEE36DD5AF0AA34" \
+    oidc_client_id="" \
+    oidc_client_secret="" \
+    default_role="eks"
+    
+ //Define the role 
+ vault write auth/jwt/role/eks @roleseks.json 
+  
+  //Creation of the token to connect to the Vault cluster
+  kubectl create token saandrea -n andrea
+    
