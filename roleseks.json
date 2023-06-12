@@ -5,6 +5,6 @@
    "bound_claims": {
     "/kubernetes.io/serviceaccount/name": ["payment","fadel", "saandrea"] 
     },
-   "policies": "default",
+   "policies": "production",
    "ttl": "3h"
   } 
