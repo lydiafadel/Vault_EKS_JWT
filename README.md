@@ -1,7 +1,7 @@
 
-1. Enable the JWT/OIDC auth method in HCP Vault using your terminal
+Enable the JWT/OIDC auth method in HCP Vault using your terminal
 
-	vault auth enable jwt
+vault auth enable jwt
 
 2. Define the jwt config. When using the jwt auth method, you only need the oidc discovery url and sometimes a TLS certificate authority to trust
 
