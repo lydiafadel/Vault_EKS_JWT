@@ -13,11 +13,12 @@ Step 3. Define the role for a specific service account or many services account.
     vault write auth/jwt/role/eks @roleseks.json 
 
 In order to reduce the Vault client, you need to take the 'iss' parameter as the user_claim. The user_claim is tied to the identity of the cluster instead of the subject. The documentation shows the example of attaching the service account to the Vault cluster. The subject (sub) refers to the service account.
+
 You can check the token claims in the jwt.io website to make sure you put the valid claims. 
 Keep in mind that using this approach, you will see the cluster's identity as the Vault client. 
 If you do audit on the logs for whatever the reason is, you will not able to see the services account entities, therefore you will not see who service account did what. 
 
 Step 5. Create the service account's token to connect to the Vault cluster
 
-    kubectl create token saandrea -n andrea
+    kubectl create token serviceaccount -n namespace
     
