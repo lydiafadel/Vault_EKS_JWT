@@ -10,7 +10,7 @@ vault write auth/jwt/config \
 vault write auth/jwt/role/eks @roleseks.json 
 
 The user_claim is tied to the identity of the cluster instead of the subject. The subject refers to the service account.
-You can check the token claims in the jwt.io website
+You can check the token claims in the jwt.io website to make sure you put the valid claims.
   
 // Create the service account's token to connect to the Vault cluster
 kubectl create token saandrea -n andrea
