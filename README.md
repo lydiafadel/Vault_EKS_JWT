@@ -5,7 +5,7 @@
 
 2. Define the jwt config. When using the jwt auth method, you only need the oidc discovery url and sometimes a TLS certificate authority to trust
 
-    vault write auth/jwt/config
+vault write auth/jwt/config
     oidc_discovery_url="https://oidc.eks.us-east-2.amazonaws.com/id/70E6A5C14C513E0BABEE36DD5AF0AA34" \
     default_role="eks"
     
