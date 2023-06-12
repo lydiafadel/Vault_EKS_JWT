@@ -30,5 +30,6 @@ In this example, I took a payment service account that belongs to a production n
     kubectl create token payment -n production
     
     
-Links to the documentation : https://developer.hashicorp.com/vault/docs/auth/jwt/oidc-providers/kubernetes
+Links to the documentation : 
+https://developer.hashicorp.com/vault/docs/auth/jwt/oidc-providers/kubernetes 
 https://developer.hashicorp.com/vault/tutorials/cloud-ops/vault-eks-jwt-auth
