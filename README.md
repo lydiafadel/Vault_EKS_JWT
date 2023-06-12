@@ -22,7 +22,7 @@ If you do audit on the logs for whatever the reason is, you will not able to see
 
 Step 5. Create the service account's token to connect to the Vault cluster
 
-In this example, I took a payment service account that belongs to a production namespace. The token will be valid for 
+In this example, I took a payment service account that belongs to a production namespace. The token will be valid for 3 hours and will expire after this period.
 
     kubectl create token payment -n production
     
