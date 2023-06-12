@@ -31,4 +31,4 @@ In this example, I took a payment service account that belongs to a production n
     
     
 Links to the documentation : https://developer.hashicorp.com/vault/docs/auth/jwt/oidc-providers/kubernetes
-                             https://developer.hashicorp.com/vault/tutorials/cloud-ops/vault-eks-jwt-auth
+https://developer.hashicorp.com/vault/tutorials/cloud-ops/vault-eks-jwt-auth
