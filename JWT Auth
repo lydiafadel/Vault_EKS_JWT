@@ -8,6 +8,9 @@ vault write auth/jwt/config \
     
 // Define the role for a specific service account or many services account. You can create a role per service account if they don't have the same TTL or the policies. 
 vault write auth/jwt/role/eks @roleseks.json 
+
+The user_claim is tied to the identity of the cluster instead of the subject. The subject refers to the service account.
+You can check the token claims in the jwt.io website
   
 // Create the service account's token to connect to the Vault cluster
 kubectl create token saandrea -n andrea
