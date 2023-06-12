@@ -6,9 +6,9 @@ vault write auth/jwt/config \
     oidc_discovery_url="https://oidc.eks.us-east-2.amazonaws.com/id/70E6A5C14C513E0BABEE36DD5AF0AA34" \
     default_role="eks"
     
- // Define the role for a specific service account or many services account. You can create a role per service account if they don't have the same TTL or the policies. 
- vault write auth/jwt/role/eks @roleseks.json 
+// Define the role for a specific service account or many services account. You can create a role per service account if they don't have the same TTL or the policies. 
+vault write auth/jwt/role/eks @roleseks.json 
   
-  // Creation of the token to connect to the Vault cluster
-  kubectl create token saandrea -n andrea
+// Create the service account's token to connect to the Vault cluster
+kubectl create token saandrea -n andrea
     
