@@ -1,5 +1,5 @@
 
-1. Enable the JWT/OIDC auth method in HCP Vault using your terminal
+Enable the JWT/OIDC auth method in HCP Vault using your terminal
 
    vault auth enable jwt
 
