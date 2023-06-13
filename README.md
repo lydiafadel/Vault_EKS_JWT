@@ -1,5 +1,5 @@
 
-You will find information here to connect a Kubernetes cluster to a Vault cluster. Any time you will create a service account you will need to get secrets from Vault. This tutorial shows how to link a Kubernetes cluster to Vault using the JWT auth method. In my example, I took an EKS cluster managed by AWS.  
+You will find information here to connect a Kubernetes cluster to a Vault cluster. Any time you will create a service account you will need to get secrets from Vault. This tutorial shows how to link a Kubernetes cluster to Vault using the JWT auth method. In my example, I created an EKS cluster managed by AWS.  
 
 Step 1. Enable the JWT/OIDC auth method in HCP Vault using your terminal
 
